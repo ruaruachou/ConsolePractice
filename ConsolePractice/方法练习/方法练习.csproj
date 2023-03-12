@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\条件语句练习：录入成绩\条件语句练习：录入成绩.csproj" />
-  </ItemGroup>
-
 </Project>
