@@ -39,22 +39,26 @@
         private static void PrintMonthCalendar(int year, int month)
         {
             //显示表头
-            Console.WriteLine("{0}年{1}月", year, month);
+            Console.WriteLine("{0}年{1}月",year,month);
+            //打印首行
             Console.WriteLine("Su\tMo\tTu\tWd\tTh\tFr\tSa");
-            int WeekDay = GetWeekByDay(year, month, 1);
+            //根据1星期数打印空格
+            int WeekDay = GetWeekByDay(year,month,1);
             int SpaceNum = 0;
             while (SpaceNum < WeekDay)
             {
                 Console.Write("\t");
                 SpaceNum++;
             }
-            int day = GetDaysByMonth(year, month);
-            int DayNum = 0;
-            while (DayNum < day)
+            //打印日期
+            int day = GetDaysByMonth(year,month);
+            int DayNum = 1;
+            while (DayNum <= day)
             {
                 Console.Write(DayNum + "\t");
                 DayNum++;
-                if (GetWeekByDay(year, month, day) == 6)
+                //每逢周六换行
+                if (GetWeekByDay(year,month,day) == 6)
                 {
                     Console.WriteLine();
                 }
@@ -69,6 +73,7 @@
         }
         private static void Main()
         {
+            Console.WriteLine("请输入年份");
             int year = int.Parse(Console.ReadLine());
             PrintYearCalendar(year);
         }
