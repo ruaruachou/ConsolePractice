@@ -13,7 +13,7 @@
             return GetSecondsByMin(min + hour * 60);
         }
 
-        //根据天数、小时数、分钟数计算
+        //根据天数、小时数、分钟数计算秒数
         private static int GetSecsByDayHoursMins(int day,int hour,int min)
         {
             return GetSecsByHoursMin(min,hour + day * 24);//注意，本行的方法中只需要min和hour两个参数
