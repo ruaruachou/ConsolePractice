@@ -73,6 +73,7 @@ namespace CalendarApplication
             Console.WriteLine("请输入年份");
             int year = int.Parse(Console.ReadLine());
             PrintYearCalendar(year);
+
         }
     }
 }

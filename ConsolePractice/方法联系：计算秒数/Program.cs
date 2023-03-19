@@ -28,6 +28,7 @@
             Console.WriteLine("Please input MinNum");
             int min = int.Parse(Console.ReadLine());
             Console.WriteLine(GetSecsByDayHoursMins(day, hour, min));
+
         }
     }
 }
