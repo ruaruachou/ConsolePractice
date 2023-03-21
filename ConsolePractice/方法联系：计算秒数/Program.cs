@@ -8,7 +8,7 @@
             return min * 60;
         }
         //根据小时数、分钟数计算秒数
-        private static int GetSecsByHoursMin(int hour,int min)
+        private static int GetSecsByHoursMin(int min,int hour)
         {
             return GetSecondsByMin(min + hour * 60);
         }
@@ -16,7 +16,7 @@
         //根据天数、小时数、分钟数计算秒数
         private static int GetSecsByDayHoursMins(int day,int hour,int min)
         {
-            return GetSecsByHoursMin(min,hour + day * 24);//注意，本行的方法中只需要min和hour两个参数
+            return GetSecsByHoursMin(min,hour + day * 24);//注意，本行的方法中只需要min和hour两个参数。另外，使用该方法时，参数顺序需要与写的方法中的顺序一致。
 
         }
         private static void Main()
