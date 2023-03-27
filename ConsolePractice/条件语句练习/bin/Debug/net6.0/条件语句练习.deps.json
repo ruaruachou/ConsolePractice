@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "条件语句练习/1.0.0": {
+        "dependencies": {
+          "条件语句练习：录入成绩": "1.0.0"
+        },
         "runtime": {
           "条件语句练习.dll": {}
+        }
+      },
+      "条件语句练习：录入成绩/1.0.0": {
+        "runtime": {
+          "条件语句练习：录入成绩.dll": {}
         }
       }
     }
   },
   "libraries": {
     "条件语句练习/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "条件语句练习：录入成绩/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

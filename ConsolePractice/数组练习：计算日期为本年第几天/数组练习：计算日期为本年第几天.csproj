@@ -3,12 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>数组练习_计算日期为本年第几天</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\数组练习：计算日期为本年第几天\数组练习：计算日期为本年第几天.csproj" />
-  </ItemGroup>
 
 </Project>
