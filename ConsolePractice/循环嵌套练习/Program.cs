@@ -1,23 +1,29 @@
 ﻿using System;
-namespace Lottery
+namespace DoubleLoop
 {
-    class LotteryApp 
+    class DoubleLoopApp
     {
-       private static void Main()
+        private static void Main()
         {
-            for (int i = 0; i < 4; i++)
+            int[] array = new int[] { 2, 8, 6, 1 ,1};
+            bool isReaped=false;
+            isReaped=IsReap(array);
+            if (isReaped == true) { Console.WriteLine("repeated"); }
+            
+        }
+        private static bool IsReap(int[] targetArray)
+        {
+            bool isReaped=false;
+            for (int i = 0; i < targetArray.Length; i++)//i=2
             {
-                for (int j = 0; j < i; j++)
+                for (int j = 1; j<targetArray.Length-i ; j++)//length=3
                 {
-                    Console.Write(" ");
-                   
+                    if (targetArray[i] == targetArray[i + j ]) isReaped = true;
+                    
                 }
-                for (int k = 0; k < 4-i; k++)
-                {
-                    Console.Write("#");
-                }
-                Console.WriteLine();
             }
+            return isReaped;
+
         }
     }
 }
