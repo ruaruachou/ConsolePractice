@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "循环嵌套练习", "循�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "二维数组练习：录入成绩", "二维数组练习：录入成绩\二维数组练习：录入成绩.csproj", "{D6054E25-30C8-4952-808F-04C7B74F2AA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "类和对象", "类和对象\类和对象.csproj", "{B88862BE-E5A7-43B6-8F76-05C18D5844F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "类和对象", "类和对象\类和对象.csproj", "{B88862BE-E5A7-43B6-8F76-05C18D5844F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "类和对象：练习", "类和对象：练习\类和对象：练习.csproj", "{33BA5D99-8A42-447C-8549-6F769EA14410}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{B88862BE-E5A7-43B6-8F76-05C18D5844F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B88862BE-E5A7-43B6-8F76-05C18D5844F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B88862BE-E5A7-43B6-8F76-05C18D5844F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BA5D99-8A42-447C-8549-6F769EA14410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BA5D99-8A42-447C-8549-6F769EA14410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BA5D99-8A42-447C-8549-6F769EA14410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BA5D99-8A42-447C-8549-6F769EA14410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿namespace SecondCount
+﻿namespace ClassPractice
 {
     class Wife
     {
@@ -27,7 +27,7 @@
         static void Main()
         {
             Wife beautyfulWife;
-            beautyfulWife = new Wife();//实例化wifu对象
+            beautyfulWife = new Wife();//实例化wife对象
             beautyfulWife.SetName("新垣结衣");
             beautyfulWife.SetAge(34);
 
