@@ -40,6 +40,30 @@
             Wife w01 = new Wife();
             w01.Name = "长泽雅美";
             w01.Age = 30;
+
+            Wife w02 = new Wife("新垣结衣", 35);
+            Wife w03 = new Wife("石原里美", 30);
+            Wife w04 = new Wife("桥本环奈", 25);
+            Wife[]wifeArray = new Wife[4];
+            wifeArray[0] = w01;
+            wifeArray[1] = w02;
+            wifeArray[2] = w03;
+            wifeArray[3] = w04;
+
+            Wife youngest = GetWifeByMinAge(wifeArray);
+
+        }
+        private static Wife GetWifeByMinAge(Wife[]wives)
+        {
+            Wife youngestWife = wives[0];
+            for (int i = 1; i < wives.Length; i++)
+            {
+                if (youngestWife.Age > wives[i].Age)
+                {
+                    youngestWife = wives[i];
+                }
+            }
+            return youngestWife;
         }
     }
 }
